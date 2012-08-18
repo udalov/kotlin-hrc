@@ -91,6 +91,7 @@
         <word name="type"/>
         <word name="val"/>
         <word name="var"/>
+        <word name="when"/>
         <word name="where"/>
         <word name="while"/>
       </keywords>
