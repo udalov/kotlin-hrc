@@ -14,13 +14,13 @@
   </annotation>
 
   <type name="kotlin">
-    <import type="def"/>
-
     <scheme name="kotlin">
       <block start="/(\{)/" end="/(\})/" scheme="kotlin"
-             region00="def:SymbolStrong" region01="def:PairStart"
-             region10="def:SymbolStrong" region11="def:PairEnd"
+             region00="def:SymbolStrong" region10="def:SymbolStrong"
+             region01="def:PairStart" region11="def:PairEnd"
       />
+      
+      <inherit scheme="java:JavaComments"/>
       
       <keywords region="def:Symbol">
          <symb name=";" region="def:SymbolStrong"/>
@@ -44,7 +44,7 @@
          <symb name="@"/>
       </keywords>
       
-      <keywords region="Keyword">
+      <keywords region="def:Keyword">
         <word name="abstract"/>
         <word name="annotation"/>
         <word name="as"/>
