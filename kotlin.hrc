@@ -22,6 +22,28 @@
              region10="def:SymbolStrong" region11="def:PairEnd"
       />
       
+      <keywords region="def:Symbol">
+         <symb name=";" region="def:SymbolStrong"/>
+         <symb name="="/>
+         <symb name="+"/>
+         <symb name="-"/>
+         <symb name="/"/>
+         <symb name="*"/>
+         <symb name="&amp;"/>
+         <symb name="^"/>
+         <symb name="|"/>
+         <symb name=":"/>
+         <symb name=","/>
+         <symb name="."/>
+         <symb name="!"/>
+         <symb name="~"/>
+         <symb name="&lt;"/>
+         <symb name="&gt;"/>
+         <symb name="%"/>
+         <symb name="?"/>
+         <symb name="@"/>
+      </keywords>
+      
       <keywords region="Keyword">
         <word name="abstract"/>
         <word name="annotation"/>
