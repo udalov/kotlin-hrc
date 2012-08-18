@@ -15,14 +15,23 @@
 
   <type name="kotlin">
     <scheme name="kotlin">
-      <block start="/(\{)/" end="/(\})/" scheme="kotlin"
-             region00="def:SymbolStrong" region10="def:SymbolStrong"
-             region01="def:PairStart" region11="def:PairEnd"
-      />
+      <inherit scheme="def:PairedBrackets">
+        <virtual scheme="def:PairedBrackets" subst-scheme="kotlin"/>
+      </inherit>
       
       <inherit scheme="java:JavaComments"/>
       
       <block start="/&#34;/" end="/&#34;|$/" scheme="java:StringContent" region="def:String"/>
+      
+      <keywords region="def:Error">
+         <symb name="["/>
+         <symb name="]"/>
+         <symb name="{"/>
+         <symb name="}"/>
+         <symb name="("/>
+         <symb name=")"/>
+         <symb name="*/"/>
+      </keywords>
       
       <keywords region="def:Symbol">
          <symb name=";" region="def:SymbolStrong"/>
