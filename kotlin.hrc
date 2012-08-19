@@ -69,7 +69,10 @@
     </scheme>
     
     <scheme name="PairedBrackets">
-      <block start="/(&lt;)/" end="/(&gt;)/" scheme="PairedBrackets" region00="def:Symbol" region01="def:PairStart" region10="def:Symbol" region11="def:PairEnd"/>
+      <!-- Disabled because &lt; and &gt; may also be used as operators (less/greater) -->
+      <!--block start="/(&lt;)/" end="/(&gt;)/" scheme="PairedBrackets"
+             region00="def:Symbol" region01="def:PairStart"
+             region10="def:Symbol" region11="def:PairEnd"/-->
       <inherit scheme="def:PairedBrackets">
         <virtual scheme="def:PairedBrackets" subst-scheme="PairedBrackets"/>
       </inherit>
