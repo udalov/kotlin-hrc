@@ -23,6 +23,8 @@
       <inherit scheme="java:JavaComments"/>
       
       <block start="/&#34;/" end="/&#34;|$/" scheme="java:StringContent" region="def:String"/>
+      <regexp match="/'\\u[\da-fA-F]{1,4}'/i" region="def:Character"/>
+      <inherit scheme="c:Character"/>
       
       <keywords region="def:Error">
          <symb name="["/>
