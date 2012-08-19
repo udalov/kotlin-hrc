@@ -30,6 +30,8 @@
       <regexp match="/'\\[uU][\da-fA-F]{1,4}'/" region="def:Character"/>
       <inherit scheme="c:Character"/>
       
+      <regexp match="/`(.*?)`/" region="def:Identifier"/>
+      
       <keywords region="def:Error">
         <symb name="["/>
         <symb name="]"/>
