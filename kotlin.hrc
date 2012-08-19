@@ -19,7 +19,8 @@
         <virtual scheme="PairedBrackets" subst-scheme="kotlin"/>
       </inherit>
       
-      <inherit scheme="def:DecNumber"/>
+      <!-- TODO: copy-paste from def, get rid of NumberSuffix -->
+      <inherit scheme="def:Number"/>
       <inherit scheme="java:JavaComments"/>
       
       <block start="/(?{def:StringEdge}&#34;&#34;&#34;)/" end="/(?{def:StringEdge}&#34;&#34;&#34;)/"
