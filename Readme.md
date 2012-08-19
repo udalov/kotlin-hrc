@@ -17,7 +17,7 @@ Far Manager and Colorer plugin **should be installed** before installing this co
    ```xml
    <prototype name="kotlin" group="main" description="Kotlin">
      <location link="kotlin.hrc"/>
-     <filename>/\.kt$/i</filename>
+     <filename>/\.(kt|jet)$/i</filename>
    </prototype>
    ```
    
