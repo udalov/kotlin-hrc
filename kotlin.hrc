@@ -109,6 +109,7 @@
         <word name="return"/>
         <word name="super"/>
         <word name="this"/>
+        <word name="This"/>
         <word name="throw"/>
         <word name="trait"/>
         <word name="true"/>
@@ -142,6 +143,7 @@
         <word name="protected"/>
         <word name="public"/>
         <word name="set"/>
+        <word name="vararg"/>
         <word name="where"/>
       </keywords>
     </scheme>
