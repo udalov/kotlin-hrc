@@ -15,8 +15,8 @@
 
   <type name="kotlin">
     <scheme name="kotlin">
-      <inherit scheme="def:PairedBrackets">
-        <virtual scheme="def:PairedBrackets" subst-scheme="kotlin"/>
+      <inherit scheme="PairedBrackets">
+        <virtual scheme="PairedBrackets" subst-scheme="kotlin"/>
       </inherit>
       
       <inherit scheme="def:DecNumber"/>
@@ -105,6 +105,13 @@
         <word name="where"/>
         <word name="while"/>
       </keywords>
+    </scheme>
+    
+    <scheme name="PairedBrackets">
+      <block start="/(&lt;)/" end="/(&gt;)/" scheme="PairedBrackets" region00="def:Symbol" region01="def:PairStart" region10="def:Symbol" region11="def:PairEnd"/>
+      <inherit scheme="def:PairedBrackets">
+        <virtual scheme="def:PairedBrackets" subst-scheme="PairedBrackets"/>
+      </inherit>
     </scheme>
 
   </type>
