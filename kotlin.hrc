@@ -56,6 +56,7 @@
          <symb name="%"/>
          <symb name="?"/>
          <symb name="@"/>
+         <symb name="$"/>
       </keywords>
       
       <keywords region="def:Keyword">
