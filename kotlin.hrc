@@ -22,8 +22,10 @@
       <inherit scheme="def:DecNumber"/>
       <inherit scheme="java:JavaComments"/>
       
-      <block start="/(?{def:StringEdge}&#34;&#34;&#34;)/" end="/(?{def:StringEdge}&#34;&#34;&#34;)/" scheme="StringContent" region="def:String"/>
-      <block start="/(?{def:StringEdge}&#34;)/" end="/(?{def:StringEdge}&#34;)|$/" scheme="StringContent" region="def:String"/>
+      <block start="/(?{def:StringEdge}&#34;&#34;&#34;)/" end="/(?{def:StringEdge}&#34;&#34;&#34;)/"
+             scheme="StringContent" region="def:String"/>
+      <block start="/(?{def:StringEdge}&#34;)/" end="/(?{def:StringEdge}&#34;)|$/"
+             scheme="LineStringContent" region="def:String"/>
       <regexp match="/'\\[uU][\da-fA-F]{1,4}'/" region="def:Character"/>
       <inherit scheme="c:Character"/>
       
@@ -127,6 +129,11 @@
       <block start="/(\$\{)/" end="/(\})/" scheme="kotlin" region="def:Insertion"
              region00="def:InsertionStart" region01="def:PairStrongStart"
              region10="def:InsertionEnd" region11="def:PairStrongEnd"/>
+    </scheme>
+    
+    <scheme name="LineStringContent">
+      <inherit scheme="StringContent"/>
+      <regexp match="/[^\\\&#34;]$/" region0="def:Error"/>
     </scheme>
     
   </type>
