@@ -62,55 +62,8 @@
          <symb name="$"/>
       </keywords>
       
-      <keywords region="def:Keyword">
-        <word name="abstract"/>
-        <word name="annotation"/>
-        <word name="as"/>
-        <word name="attribute"/>
-        <word name="break"/>
-        <word name="by"/>
-        <word name="catch"/>
-        <word name="class"/>
-        <word name="continue"/>
-        <word name="do"/>
-        <word name="else"/>
-        <word name="enum"/>
-        <word name="false"/>
-        <word name="final"/>
-        <word name="finally"/>
-        <word name="for"/>
-        <word name="fun"/>
-        <word name="get"/>
-        <word name="if"/>
-        <word name="import"/>
-        <word name="in"/>
-        <word name="internal"/>
-        <word name="is"/>
-        <word name="namespace"/>
-        <word name="null"/>
-        <word name="object"/>
-        <word name="open"/>
-        <word name="out"/>
-        <word name="override"/>
-        <word name="package"/>
-        <word name="private"/>
-        <word name="protected"/>
-        <word name="public"/>
-        <word name="return"/>
-        <word name="set"/>
-        <word name="super"/>
-        <word name="this"/>
-        <word name="throw"/>
-        <word name="trait"/>
-        <word name="true"/>
-        <word name="try"/>
-        <word name="type"/>
-        <word name="val"/>
-        <word name="var"/>
-        <word name="when"/>
-        <word name="where"/>
-        <word name="while"/>
-      </keywords>
+      <inherit scheme="HardKeywords"/>
+      <inherit scheme="SoftKeywords"/>
     </scheme>
     
     <scheme name="PairedBrackets">
@@ -134,6 +87,63 @@
     <scheme name="LineStringContent">
       <inherit scheme="StringContent"/>
       <regexp match="/[^\\\&#34;]$/" region0="def:Error"/>
+    </scheme>
+    
+    <scheme name="HardKeywords">
+      <keywords region="def:Keyword">
+        <word name="as"/>
+        <word name="break"/>
+        <word name="class"/>
+        <word name="continue"/>
+        <word name="do"/>
+        <word name="else"/>
+        <word name="false"/>
+        <word name="for"/>
+        <word name="fun"/>
+        <word name="if"/>
+        <word name="in"/>
+        <word name="is"/>
+        <word name="null"/>
+        <word name="object"/>
+        <word name="package"/>
+        <word name="return"/>
+        <word name="super"/>
+        <word name="this"/>
+        <word name="throw"/>
+        <word name="trait"/>
+        <word name="true"/>
+        <word name="try"/>
+        <word name="type"/>
+        <word name="val"/>
+        <word name="var"/>
+        <word name="when"/>
+        <word name="while"/>
+      </keywords>
+    </scheme>
+    
+    <scheme name="SoftKeywords">
+      <keywords region="def:Keyword">
+        <word name="abstract"/>
+        <word name="annotation"/>
+        <word name="attribute"/>
+        <word name="by"/>
+        <word name="catch"/>
+        <word name="enum"/>
+        <word name="final"/>
+        <word name="finally"/>
+        <word name="get"/>
+        <word name="import"/>
+        <word name="internal"/>
+        <word name="namespace"/>
+        <word name="open"/>
+        <word name="out"/>
+        <word name="override"/>
+        <word name="private"/>
+        <word name="protected"/>
+        <word name="public"/>
+        <word name="set"/>
+        <word name="where"/>
+      </keywords>
     </scheme>
     
   </type>
