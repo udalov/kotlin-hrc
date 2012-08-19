@@ -64,6 +64,7 @@
       
       <inherit scheme="HardKeywords"/>
       <inherit scheme="SoftKeywords"/>
+      <inherit scheme="TypeKeywords"/>
     </scheme>
     
     <scheme name="PairedBrackets">
@@ -146,6 +147,27 @@
         <word name="vararg"/>
         <word name="where"/>
       </keywords>
+    </scheme>
+    
+    <scheme name="TypeKeywords">
+      <keywords region="def:TypeKeyword">
+        <word name="Any"/>
+        <word name="Boolean"/>
+        <word name="Byte"/>
+        <word name="Char"/>
+        <word name="Double"/>
+        <word name="Float"/>
+        <word name="Int"/>
+        <word name="Long"/>
+        <word name="Nothing"/>
+        <word name="Short"/>
+        <word name="Unit"/>
+      </keywords>
+      
+      <!-- A hack to make default color scheme a little prettier (should've been def:Constant instead) -->
+      <regexp match="/\c[A-Z_0-9]*\M([^\w]|$)/" region="def:VarStrong"/>
+      
+      <!-- TODO: Include all known Java & Kotlin classes -->
     </scheme>
     
   </type>
