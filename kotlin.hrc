@@ -49,7 +49,7 @@
         <symb name="&amp;"/>
         <symb name="^"/>
         <symb name="|"/>
-        <symb name=":"/>
+        <symb name=":" region="def:SymbolStrong"/>
         <symb name=","/>
         <symb name="."/>
         <symb name="!"/>
