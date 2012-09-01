@@ -145,7 +145,6 @@
       <regexp match="/\b (?{def:Keyword}override)   \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
 
       <keywords region="def:Keyword">
-        <word name="attribute"/>
         <word name="by"/>
         <word name="catch"/>
         <word name="finally"/>
