@@ -136,6 +136,7 @@
         <word name="attribute"/>
         <word name="by"/>
         <word name="catch"/>
+        <word name="data"/>
         <word name="enum"/>
         <word name="final"/>
         <word name="finally"/>
