@@ -130,26 +130,29 @@
     </scheme>
     
     <scheme name="SoftKeywords">
+      <regexp match="/\b (?{def:Keyword}annotation) \s+ \M (\w+ \s+)* (class|trait)/x"/>
+      <regexp match="/\b (?{def:Keyword}data)       \s+ \M (\w+ \s+)* class/x"/>
+      <regexp match="/\b (?{def:Keyword}enum)       \s+ \M (\w+ \s+)* class/x"/>
+      
+      <regexp match="/\b (?{def:Keyword}internal)   \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}private)    \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}protected)  \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}public)     \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
+      
+      <regexp match="/\b (?{def:Keyword}abstract)   \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}final)      \s+ \M (\w+ \s+)* (class|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}open)       \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
+      <regexp match="/\b (?{def:Keyword}override)   \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
+
       <keywords region="def:Keyword">
-        <word name="abstract"/>
-        <word name="annotation"/>
         <word name="attribute"/>
         <word name="by"/>
         <word name="catch"/>
-        <word name="data"/>
-        <word name="enum"/>
-        <word name="final"/>
         <word name="finally"/>
         <word name="get"/>
         <word name="import"/>
-        <word name="internal"/>
         <word name="namespace"/>
-        <word name="open"/>
         <word name="out"/>
-        <word name="override"/>
-        <word name="private"/>
-        <word name="protected"/>
-        <word name="public"/>
         <word name="set"/>
         <word name="vararg"/>
         <word name="where"/>
