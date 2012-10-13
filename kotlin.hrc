@@ -143,11 +143,12 @@
       <regexp match="/\b (?{def:Keyword}final)      \s+ \M (\w+ \s+)* (class|fun|val|var)/x"/>
       <regexp match="/\b (?{def:Keyword}open)       \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
       <regexp match="/\b (?{def:Keyword}override)   \s+ \M (\w+ \s+)* (class|trait|fun|val|var)/x"/>
+      
+      <regexp match="/\b (?{def:Keyword}catch) \s* \M \{/x"/>
+      <regexp match="/\b (?{def:Keyword}finally) \s* \M \{/x"/>
 
       <keywords region="def:Keyword">
         <word name="by"/>
-        <word name="catch"/>
-        <word name="finally"/>
         <word name="get"/>
         <word name="import"/>
         <word name="namespace"/>
