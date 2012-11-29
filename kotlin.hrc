@@ -134,6 +134,8 @@
       <regexp match="/\b (?{def:Keyword}data)       \s+ \M (\w+ \s+)* class/x"/>
       <regexp match="/\b (?{def:Keyword}enum)       \s+ \M (\w+ \s+)* class/x"/>
       
+      <regexp match="/\b (?{def:Keyword}inner)      \s+ \M (\w+ \s+)* class/x"/>
+      
       <regexp match="/\b (?{def:Keyword}internal)   \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
       <regexp match="/\b (?{def:Keyword}private)    \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
       <regexp match="/\b (?{def:Keyword}protected)  \s+ \M (\w+ \s+)* (class|trait|object|fun|val|var)/x"/>
