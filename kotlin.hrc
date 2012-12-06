@@ -148,11 +148,12 @@
       
       <regexp match="/\b (?{def:Keyword}catch) \s* \M \( .+ \) \s* \{/x"/>
       <regexp match="/\b (?{def:Keyword}finally) \s* \M \{/x"/>
+      
+      <regexp match="/^ \s* (?{def:Keyword}import) \s* (?{def:VarStrong}\S+)/x"/>
 
       <keywords region="def:Keyword">
         <word name="by"/>
         <word name="get"/>
-        <word name="import"/>
         <word name="namespace"/>
         <word name="out"/>
         <word name="set"/>
