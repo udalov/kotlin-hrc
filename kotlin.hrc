@@ -154,7 +154,7 @@
       <keywords region="def:Keyword">
         <word name="by"/>
         <word name="get"/>
-        <word name="namespace"/>
+        <word name="inline"/>
         <word name="out"/>
         <word name="set"/>
         <word name="vararg"/>
