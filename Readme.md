@@ -10,7 +10,7 @@ Far Manager and Colorer plugin **should be installed** before installing this co
    
    E.g. `C:\Program Files\Far\Plugins\farcolorer-take5.be5`
 
-2. Download the `kotlin.hrc` file and save it to `hrc` folder of Colorer's home.
+2. Download all the `*.hrc` files from this repository and save them to `hrc` folder of Colorer's home.
 
 3. Insert the following lines into `hrc/proto.hrc`:
 
