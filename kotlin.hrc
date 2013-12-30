@@ -130,7 +130,7 @@
     </scheme>
     
     <scheme name="SoftKeywords">
-      <regexp match="/\b (?{def:Keyword}annotation) \s+ \M (\w+ \s+)* (class|trait)/x"/>
+      <regexp match="/\b (?{def:Keyword}annotation) \s+ \M (\w+ \s+)* class/x"/>
       <regexp match="/\b (?{def:Keyword}data)       \s+ \M (\w+ \s+)* class/x"/>
       <regexp match="/\b (?{def:Keyword}enum)       \s+ \M (\w+ \s+)* class/x"/>
       
