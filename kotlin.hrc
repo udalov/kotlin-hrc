@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <!DOCTYPE hrc PUBLIC "-//Cail Lomecb//DTD Colorer HRC take5//EN"
   "http://colorer.sf.net/2003/hrc.dtd"[
-<!ENTITY kotlin-std SYSTEM "kotlin-std.ent.hrc">
-<!ENTITY java-std SYSTEM "java-std.ent.hrc">
+<!ENTITY kotlin-std SYSTEM "kotlin-runtime.ent.hrc">
+<!ENTITY java-std SYSTEM "kotlin-jdk.ent.hrc">
 ]>
 <hrc version="take5" xmlns="http://colorer.sf.net/2003/hrc"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -22,7 +22,6 @@
         <virtual scheme="PairedBrackets" subst-scheme="kotlin"/>
       </inherit>
       
-      <!-- TODO: copy-paste from def, get rid of NumberSuffix -->
       <inherit scheme="def:Number"/>
       <inherit scheme="java:JavaComments"/>
       

@@ -74,6 +74,6 @@ fun generate(jar: String, outputFile: String) {
 }
 
 fun main(args: Array<String>) {
-    generate("D:\\c\\kotlin\\dist\\kotlinc\\lib\\kotlin-runtime.jar", "kotlin-std.ent.hrc")
-    generate("C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar", "java-std.ent.hrc")
+    generate("D:\\c\\kotlin\\dist\\kotlinc\\lib\\kotlin-runtime.jar", "kotlin-runtime.ent.hrc")
+    generate("C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar", "kotlin-jdk.ent.hrc")
 }
